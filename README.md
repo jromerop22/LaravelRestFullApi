@@ -21,6 +21,8 @@ Implementar los servicios bajo el paradigma de microservicios.
 Implementar Integración Continua para automatizar el testing y deployment de los servicios.
 Mostrar los resultados de los servicios en una página web.
 
+https://github.com/jromerop22/LaravelRestFullApi/blob/master/postman/bdf.png
+
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
