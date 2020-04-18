@@ -1,3 +1,27 @@
+## PRUEBA DESARROLLO PHP 
+
+1. Realice un servicio con estándar rest full api, con el cual se pueda realizar la administración de una aplicación de calificación de películas y series, al estilo IMDB, el servicio debe cumplir con las siguientes características : 
+
+- **Agregar nuevas series/películas.
+- **Editar / eliminar series/películas.
+- **Calificar series/películas.
+- **Buscar series/películas por nombre o categoría.
+- **Listar las series/películas más recientes.
+- **Listar las series/películas mejor calificadas.
+ 
+
+Para realizar estos servicios puede usar php puro o un framework si así lo desea, asimismo puede utilizar la base de datos que desee.
+Cada servicio debe contar con sus respectivas pruebas unitarias.
+La prueba debe estar en algún repositorio de versiones público, como GITLAB, GITHUB o el que desee. 
+
+Puntos extras (Plus)  para la prueba:
+
+Utilizar Firebase para alguna de las funcionalidades.
+Implementar los servicios bajo el paradigma de microservicios.
+Implementar Integración Continua para automatizar el testing y deployment de los servicios.
+Mostrar los resultados de los servicios en una página web.
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
