@@ -26,6 +26,8 @@ Mostrar los resultados de los servicios en una página web.
 
 ## Routing
 ejecutar comando php artisan route:list para ver rutas
+
+```sh
 +----------------------------+
 | URI                        |
 +----------------------------+
@@ -43,7 +45,7 @@ ejecutar comando php artisan route:list para ver rutas
 | home                       |
 | tipos                      |
 +----------------------------+
-
+```
 
 ## prueba
 en la carpeta postman se encuntra un archivo prueba.postman_collection que puede ser importado para probar las rutas
