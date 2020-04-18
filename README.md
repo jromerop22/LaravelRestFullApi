@@ -21,9 +21,34 @@ Implementar los servicios bajo el paradigma de microservicios.
 Implementar Integración Continua para automatizar el testing y deployment de los servicios.
 Mostrar los resultados de los servicios en una página web.
 
-https://github.com/jromerop22/LaravelRestFullApi/blob/master/postman/bdf.png
+## Modelo Datos
+![Modelo de bae de datos](https://github.com/jromerop22/LaravelRestFullApi/blob/master/postman/bdf.png)
+
+## Routing
++--------+----------+----------------------------+------+------------------------------------------------------------+--------------+
+| Domain | Method   | URI                        | Name | Action                                                     | Middleware   |
++--------+----------+----------------------------+------+------------------------------------------------------------+--------------+
+|        | PUT      | Api/Calificar/{id}         |      | App\Http\Controllers\ContenidosController@Calificar        | web          |
+|        | POST     | Api/Crear                  |      | App\Http\Controllers\ContenidosController@Crear            | web          |
+|        | PUT      | Api/Editar/{id}            |      | App\Http\Controllers\ContenidosController@Editar           | web          |
+|        | DELETE   | Api/Eliminar/{idcontenido} |      | App\Http\Controllers\ContenidosController@Eliminar         | web          |
+|        | GET|HEAD | Api/ListarCategoria/{id}   |      | App\Http\Controllers\ContenidosController@ListarCategoria  | web          |
+|        | GET|HEAD | Api/ListarNombre/{nombre}  |      | App\Http\Controllers\ContenidosController@ListarNombre     | web          |
+|        | GET|HEAD | Api/ListarRecientes        |      | App\Http\Controllers\ContenidosController@ListarRecientes  | web          |
+|        | GET|HEAD | Api/MejorCalificacion      |      | App\Http\Controllers\ContenidosController@ListarCalificada | web          |
+|        | GET|HEAD | api/user                   |      | Closure                                                    | api,auth:api |
+|        | GET|HEAD | categorias                 |      | App\Http\Controllers\TestController@selectCategorias       | web          |
+|        | GET|HEAD | contenidos                 |      | App\Http\Controllers\TestController@selectContenido        | web          |
+|        | GET|HEAD | home                       |      | Illuminate\Routing\ViewController                          | web          |
+|        | GET|HEAD | tipos                      |      | App\Http\Controllers\TestController@selectTipoContenido    | web          |
++--------+----------+----------------------------+------+------------------------------------------------------------+---------
 
 
+## prueba
+en la carpeta postman se encuntra un archivo prueba.postman_collection que puede ser importado para probar las rutas
+
+
+## Documentacion
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
