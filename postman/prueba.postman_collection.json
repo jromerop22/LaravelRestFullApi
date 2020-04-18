@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "474189ec-44dd-4541-9076-16dd96c11e97",
+		"name": "prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Agregar contenido",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\" : \"elite\",\n\t\"director\" : \"netflix\",\n\t\"calificacion\" : 5,\n\t\"idtipo\" : 1,\n\t\"idcategoria\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://laravelprueba.com.devel/Api/Crear",
+					"protocol": "http",
+					"host": [
+						"laravelprueba",
+						"com",
+						"devel"
+					],
+					"path": [
+						"Api",
+						"Crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar por id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\" : \"elite\",\n\t\"director\" : \"netflix\",\n\t\"calificacion\" : 4,\n\t\"idtipo\" : 2,\n\t\"idcategoria\" : 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://laravelprueba.com.devel/Api/Editar/1",
+					"protocol": "http",
+					"host": [
+						"laravelprueba",
+						"com",
+						"devel"
+					],
+					"path": [
+						"Api",
+						"Editar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar por id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://laravelprueba.com.devel/Api/Eliminar/2",
+					"protocol": "http",
+					"host": [
+						"laravelprueba",
+						"com",
+						"devel"
+					],
+					"path": [
+						"Api",
+						"Eliminar",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Nombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://laravelprueba.com.devel/Api/ListarNombre/elite",
+					"protocol": "http",
+					"host": [
+						"laravelprueba",
+						"com",
+						"devel"
+					],
+					"path": [
+						"Api",
+						"ListarNombre",
+						"elite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Categoria ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://laravelprueba.com.devel/Api/ListarCategoria/1",
+					"protocol": "http",
+					"host": [
+						"laravelprueba",
+						"com",
+						"devel"
+					],
+					"path": [
+						"Api",
+						"ListarCategoria",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Recientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://laravelprueba.com.devel/Api/ListarRecientes",
+					"protocol": "http",
+					"host": [
+						"laravelprueba",
+						"com",
+						"devel"
+					],
+					"path": [
+						"Api",
+						"ListarRecientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Mejor Calificacion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://laravelprueba.com.devel/Api/MejorCalificacion",
+					"protocol": "http",
+					"host": [
+						"laravelprueba",
+						"com",
+						"devel"
+					],
+					"path": [
+						"Api",
+						"MejorCalificacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Calificacion",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\" : \"elite\",\n\t\"director\" : \"netflix\",\n\t\"calificacion\" : 2,\n\t\"idtipo\" : 2,\n\t\"idcategoria\" : 3\n}"
+				},
+				"url": {
+					"raw": "http://laravelprueba.com.devel/Api/Calificar/4",
+					"protocol": "http",
+					"host": [
+						"laravelprueba",
+						"com",
+						"devel"
+					],
+					"path": [
+						"Api",
+						"Calificar",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
