@@ -25,28 +25,31 @@ Mostrar los resultados de los servicios en una página web.
 ![Modelo de bae de datos](https://github.com/jromerop22/LaravelRestFullApi/blob/master/postman/bdf.png)
 
 ## Routing
-+--------+----------+----------------------------+------+------------------------------------------------------------+--------------+
-| Domain | Method   | URI                        | Name | Action                                                     | Middleware   |
-+--------+----------+----------------------------+------+------------------------------------------------------------+--------------+
-|        | PUT      | Api/Calificar/{id}         |      | App\Http\Controllers\ContenidosController@Calificar        | web          |
-|        | POST     | Api/Crear                  |      | App\Http\Controllers\ContenidosController@Crear            | web          |
-|        | PUT      | Api/Editar/{id}            |      | App\Http\Controllers\ContenidosController@Editar           | web          |
-|        | DELETE   | Api/Eliminar/{idcontenido} |      | App\Http\Controllers\ContenidosController@Eliminar         | web          |
-|        | GET|HEAD | Api/ListarCategoria/{id}   |      | App\Http\Controllers\ContenidosController@ListarCategoria  | web          |
-|        | GET|HEAD | Api/ListarNombre/{nombre}  |      | App\Http\Controllers\ContenidosController@ListarNombre     | web          |
-|        | GET|HEAD | Api/ListarRecientes        |      | App\Http\Controllers\ContenidosController@ListarRecientes  | web          |
-|        | GET|HEAD | Api/MejorCalificacion      |      | App\Http\Controllers\ContenidosController@ListarCalificada | web          |
-|        | GET|HEAD | api/user                   |      | Closure                                                    | api,auth:api |
-|        | GET|HEAD | categorias                 |      | App\Http\Controllers\TestController@selectCategorias       | web          |
-|        | GET|HEAD | contenidos                 |      | App\Http\Controllers\TestController@selectContenido        | web          |
-|        | GET|HEAD | home                       |      | Illuminate\Routing\ViewController                          | web          |
-|        | GET|HEAD | tipos                      |      | App\Http\Controllers\TestController@selectTipoContenido    | web          |
-+--------+----------+----------------------------+------+------------------------------------------------------------+---------
+ejecutar comando php artisan route:list para ver rutas
++----------------------------+
+| URI                        |
++----------------------------+
+| Api/Calificar/{id}         |
+| Api/Crear                  |
+| Api/Editar/{id}            |
+| Api/Eliminar/{idcontenido} |
+| Api/ListarCategoria/{id}   |
+| Api/ListarNombre/{nombre}  |
+| Api/ListarRecientes        |
+| Api/MejorCalificacion      |
+| api/user                   |
+| categorias                 |
+| contenidos                 |
+| home                       |
+| tipos                      |
++----------------------------+
 
 
 ## prueba
 en la carpeta postman se encuntra un archivo prueba.postman_collection que puede ser importado para probar las rutas
 
+## Adicional Microservices
+dentro de mis repositorios tengo microservices de login que podrian ser implementados en este proyecto esta escritos en javascript
 
 ## Documentacion
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
